@@ -36,9 +36,9 @@ for i in range(N):
 for i in range(N-2):
     for j in range(i+1,N-1):
         for k in range(j+1,N):
-            if maximum==None or maximum<A[i].Triangle_Perimetr(A[j],A[k]):
+            if maximum==None or maximum<A[i].Triangle_Square(A[j],A[k]):
                 B[0],B[1],B[2]=A[i],A[j],A[k]
-                maximum=A[i].Triangle_Perimetr(A[j],A[k])
+                maximum=A[i].Triangle_Square(A[j],A[k])
                 
 print(*B)
                 
