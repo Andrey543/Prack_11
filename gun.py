@@ -48,13 +48,13 @@ class ball():
         self.vy=self.vy-1
         if self.x>800:
             self.vx=-self.vx
-            self.x=800-self.x
+            self.x=800
         if self.x<0:
 	        self.vx=-self.vx
 	        self.x=-self.x
         if self.y>600:
-	        self.vy=0
-	        self.y=600-self.y
+	        self.vy=-self.vy
+	        self.y=600
         if self.y<0:
 	        self.vy=-self.vy
 	        self.y=-self.y
